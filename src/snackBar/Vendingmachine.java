@@ -4,7 +4,7 @@ public class Vendingmachine
 {
 	private static int maxId = 0;
 	private int id;
-	private String Name;
+	private String name;
 
 	public Vendingmachine(String name)
 	{
@@ -26,5 +26,12 @@ public class Vendingmachine
 	public void setName(String name)
 	{
 		this.name = name;
+	}
+	@Override
+	public String toString()
+	{
+		String rtnStr = "id: " + id + "\n" +
+						"name: " + name + "\n";
+		return rtnStr;
 	}
 }

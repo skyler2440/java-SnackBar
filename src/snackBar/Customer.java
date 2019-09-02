@@ -31,13 +31,21 @@ public class Customer
 		this.name = name;
 	}
 
-	public int getCashOnHand()
+	public double getCashOnHand()
 	{
-		return cashOnHand
+		return cashOnHand;
 	}
 
 	public void setCashOnHand(int cashOnHand)
 	{
 		this.cashOnHand = cashOnHand;
+	}
+	@Override
+	public String toString()
+	{
+		String rtnStr = "id: " + id + "\n" +
+						"name: " + name + "\n" +
+						"cash on hand: " + cashOnHand + "\n";
+		return rtnStr;
 	}
 }
