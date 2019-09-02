@@ -36,7 +36,7 @@ public class Customer
 		return cashOnHand;
 	}
 
-	public void setCashOnHand(int cashOnHand)
+	public void setCashOnHand(double cashOnHand)
 	{
 		this.cashOnHand = cashOnHand;
 	}

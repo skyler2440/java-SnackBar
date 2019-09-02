@@ -31,6 +31,39 @@ public class Main
 		System.out.println(s3);
 		System.out.println(s4);
 		System.out.println(s5);
+
+		System.out.println("*** 1. CX 1 buys 3 of snack 4 ***");
+		c1.setCashOnHand(c1.getCashOnHand() - (s4.getCost() * 3.0));
+		s4.setQuantity(s4.getQuantity() - 3);
+		System.out.println("Cash on hand: " + c1.getCashOnHand() + " Quantity: " + s4.getQuantity());
+
+		System.out.println("*** 2. CX 1 buys 1 of snack 3 ***");
+		c1.setCashOnHand(c1.getCashOnHand() - (s3.getCost() * 1));
+		s3.setQuantity(s3.getQuantity() - 1);
+		System.out.println("Cash on hand: " + c1.getCashOnHand() + " Quantity: " + s3.getQuantity());
+
+		System.out.println("*** 3. CX 2 buys 2 of snack 4 ***");
+		c2.setCashOnHand(c2.getCashOnHand() - (s4.getCost() * 2));
+		s4.setQuantity(s4.getQuantity() - 2);
+		System.out.println("Cash on hand: " + c2.getCashOnHand() + " Quantity: " + s4.getQuantity());
+
+		System.out.println("*** 4. CX 1 finds 10 ***");
+		c1.setCashOnHand(c1.getCashOnHand() + 10);
+		System.out.println("Cash on hand: " + c1.getCashOnHand());
+
+		System.out.println("*** 5. CX 1 buys 1 of snack 2 ***");
+		c1.setCashOnHand(c1.getCashOnHand() - (s2.getCost() * 1));
+		s2.setQuantity(s2.getQuantity() - 1);
+		System.out.println("Cash on hand: " + c1.getCashOnHand() + " Quantity: " + s2.getQuantity());
+
+		System.out.println("*** 6. Add 12 items to Snack 3 ***");
+		s3.setQuantity(s3.getQuantity() + 12);
+		System.out.println("Quantity: " + s3.getQuantity());
+
+		System.out.println("*** 7. CX 2 buys 3 of snack 3 ***");
+		c2.setCashOnHand(c2.getCashOnHand() - (s3.getCost() * 3));
+		s3.setQuantity(s3.getQuantity() - 3);
+		System.out.println("Cash on hand: " + c2.getCashOnHand() + " Quantity: " + s3.getQuantity());
 	}
 
 	public static void main(String[] args)
